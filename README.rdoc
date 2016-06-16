@@ -1,28 +1,4 @@
-== README
+== Rails Monolith
+A conceptual rails monolith implementation. It consumes a rails microservice(which is {rails-pdf-microservice}[https://github.com/yigitozkavci/rails-pdf-microservice] in this case) in 2 different ways: Svelte and a custom service in which they both consume a Swagger-documented API.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Logic is happening at route /wow which directs into landing#index action. You can get started to inspect the project from there.
