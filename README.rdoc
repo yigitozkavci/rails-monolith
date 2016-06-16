@@ -1,2 +1,4 @@
 == Rails Monolith
 A conceptual rails monolith implementation. It consumes a rails microservice in 2 different ways: Svelte and a custom service in which they both consume a Swagger-documented API.
+
+Logic is happening at route /wow which directs into landing#index action. You can get started to inspect the project from there.
