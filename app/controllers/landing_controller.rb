@@ -1,3 +1,4 @@
+require 'html_pdf_converter'
 class LandingController < ApplicationController
 	def index
 
@@ -24,7 +25,15 @@ class LandingController < ApplicationController
 
 		# Converting it
 		pdf_document = service.convert_to('pdf')
+
 		########################################################################
+		# Gem implementation
+		#
+		# Initializing gem as service object
+		gem_service = HtmlPdfConverter.new html_document
+
+		# Converting it
+		pdf_document = gem_service.convert_to('pdf')
 
 		# Rendering the pdf document
 		render json: pdf_document

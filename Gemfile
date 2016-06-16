@@ -46,6 +46,8 @@ group :development do
   gem 'spring'
 end
 
+gem 'html_pdf_converter', '0.0.0'
+
 # We consume external api's via http. Faraday helps us at sending these requests.
 gem 'faraday'
 
